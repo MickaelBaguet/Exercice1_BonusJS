@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Exercice 1</title>
+</head>
+<body>
+
+  <div class="container-fluid text-center">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-3">Exercice 1 - Partie Bonus</h1>
+        <p class="lead">L'addition</p>
+      </div>
+    </div>
+
+    <p>Appel d'une fonction qui additionne 4 et 3 et retourne la somme :</p>
+    <!-- Ajout d'une balise vide afin d'afficher le resultat plus tard -->
+    <p id="valeur"></p>
+
+  </div>
+
+  <script>
+    // Fonction prenant les deux nombres en paramètres
+    function addition(nb1, nb2) {
+      return nb1 + nb2;
+    }
+    // On affiche dans le <p> vide la valeur de l'addition
+    document.getElementById("valeur").innerHTML = addition(4, 3);
+  </script>
+
+</body>
+</html>
